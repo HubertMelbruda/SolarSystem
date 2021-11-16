@@ -1,0 +1,102 @@
+* {                       /* RESET */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Body {
+    /* background-color: rgb(224, 222, 222); */
+    background: rgb(0, 0, 0);
+    /* background: linear-gradient(90deg, rgba(7,23,87,1) 0%, rgba(0,0,0,1) 50%, rgba(7,23,87,1) 100%); */
+    font-family: 'Oswald', monospace;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.DivRow {
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+
+.DivImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 50%;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.904);
+}
+.DivText {
+    display: flex; /* ustawiasz wartosc display: flex; */
+    justify-content: center;
+    align-items: center; /* przy pomocy align-items (dziala tylko z display: flex) ustawiasz pozycje elmentow zawartych w divie w pionie */
+    width: 40%;
+    height: 50%;
+    padding: 60px 0px;
+    border-radius: 20px;
+    /* background: rgb(85, 76, 255); */
+    /* background: linear-gradient(90deg, rgb(7, 4, 51) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%); */
+}
+
+.Image {
+
+    width: 70%; /* procentowe wartosci pozwalaja dostosowac sie zawsze wielkosciowo do elementu nadrzednego; % szerokosci nadrzednego elementu */
+    height: 60%;
+    border: 10px solid transparent;
+    border-radius: 20px;
+}
+
+.BorderSun {
+    border: 10px solid transparent;
+    border-radius: 20px;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(0deg, rgba(241, 11, 11, 0.171) 0%, rgba(20, 4, 4, 0.329) 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.BorderMercury {
+    border: 10px solid transparent;
+    border-radius: 20px;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(45deg, rgba(0, 17, 255, 0.171) 0%, rgba(216, 10, 10, 0.329) 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    background: rgb(0, 0, 0);
+    /* background: linear-gradient(90deg, rgba(7,23,87,1) 0%, rgba(0,0,0,1) 50%, rgba(7,23,87,1) 100%); */
+}
+
+.navigation a {
+    font-size: 20px;
+    font-family: 'Oswald', monospace;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: whitesmoke;
+}
+
+  .navigation a:hover {
+    background: ;
+}
+
+#shadow {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+p {
+    font-size: 20px;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 30px;
+    
+}
