@@ -58,7 +58,15 @@
 .BorderMercury {
     border: 10px solid transparent;
     border-radius: 20px;
-    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(45deg, rgba(0, 17, 255, 0.171) 0%, rgba(216, 10, 10, 0.329) 100%);
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(0deg, rgba(0, 17, 255, 0.171) 0%, rgba(216, 10, 10, 0.329) 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.BorderVenus {
+    border: 10px solid transparent;
+    border-radius: 20px;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(0deg, rgba(255, 166, 0, 0.678) 0%, rgba(0, 15, 224, 0.342) 100%);
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
