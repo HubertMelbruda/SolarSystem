@@ -50,7 +50,7 @@
 .BorderSun {
     border: 10px solid transparent;
     border-radius: 20px;
-    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(0deg, rgba(241, 11, 11, 0.171) 0%, rgba(20, 4, 4, 0.329) 100%);
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(0deg, rgba(241, 11, 11, 0.170) 0%, rgba(20, 4, 4, 0.330) 100%);
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
@@ -58,7 +58,7 @@
 .BorderMercury {
     border: 10px solid transparent;
     border-radius: 20px;
-    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(0deg, rgba(0, 17, 255, 0.171) 0%, rgba(216, 10, 10, 0.329) 100%);
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(0deg, rgba(0, 17, 255, 0.170) 50%, rgba(216, 10, 10, 0.330) 100%);
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
@@ -66,7 +66,15 @@
 .BorderVenus {
     border: 10px solid transparent;
     border-radius: 20px;
-    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(0deg, rgba(255, 166, 0, 0.678) 0%, rgba(0, 15, 224, 0.342) 100%);
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(0deg, rgba(255, 166, 0, 0.330) 30%, rgba(0, 17, 255, 0.170) 90%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.BorderEarth {
+    border: 10px solid transparent;
+    border-radius: 20px;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(0deg, rgba(96, 191, 255, 0.815) 30%, rgba(255, 166, 0, 0.330) 100%);
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
