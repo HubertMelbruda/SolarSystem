@@ -1,13 +1,11 @@
-* {                       /* RESET */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 .Body {
-    /* background-color: rgb(224, 222, 222); */
     background: rgb(0, 0, 0);
-    /* background: linear-gradient(90deg, rgba(7,23,87,1) 0%, rgba(0,0,0,1) 50%, rgba(7,23,87,1) 100%); */
     font-family: 'Oswald', monospace;
     font-family: 'Quicksand', sans-serif;
 }
@@ -19,14 +17,15 @@
     justify-content: center;
     align-items: center;
     align-content: space-between;
+    margin: 50px;
 }
 
 .DivImg {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    height: 50%;
+    width: 30%;
+    height: 40%;
     border-radius: 20px;
     background: rgba(0, 0, 0, 0.904);
 }
@@ -37,13 +36,11 @@
     width: 40%;
     height: 50%;
     padding: 60px 0px;
-    border-radius: 20px;
-    /* background: rgb(85, 76, 255); */
-    /* background: linear-gradient(90deg, rgb(7, 4, 51) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%); */
+    /* border-radius: 20px; */
+    /* background: linear-gradient(-45deg, rgba(255, 0, 0, 0.178) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%); */
 }
 
 .Image {
-
     width: 70%; /* procentowe wartosci pozwalaja dostosowac sie zawsze wielkosciowo do elementu nadrzednego; % szerokosci nadrzednego elementu */
     height: 60%;
     border: 10px solid transparent;
