@@ -5,13 +5,14 @@
 }
 
 .Body {
+    font-size: 10px;
     background: rgb(0, 0, 0);
     font-family: 'Oswald', monospace;
     font-family: 'Quicksand', sans-serif;
 }
 
 .DivRow {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -24,29 +25,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 40%;
     height: 40%;
     border-radius: 20px;
     background: rgba(0, 0, 0, 0.904);
 }
 .DivText {
-    display: flex; /* ustawiasz wartosc display: flex; */
+    display: flex;
     justify-content: center;
-    align-items: center; /* przy pomocy align-items (dziala tylko z display: flex) ustawiasz pozycje elmentow zawartych w divie w pionie */
+    align-items: center;
     width: 40%;
     height: 50%;
     padding: 60px 0px;
-    /* border-radius: 20px; */
-    /* background: linear-gradient(-45deg, rgba(255, 0, 0, 0.178) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%); */
+    
 }
 
 .Image {
-    width: 70%; /* procentowe wartosci pozwalaja dostosowac sie zawsze wielkosciowo do elementu nadrzednego; % szerokosci nadrzednego elementu */
+    width: 70%;
     height: 60%;
     border: 10px solid transparent;
     border-radius: 20px;
 }
 
+/*  Zapewne ten kod nie powinien się tak powtarzać i jest jakiś bardziej elegancki sposób, ale jeszcze go nie poznałem. */
 .BorderSun {
     border: 10px solid transparent;
     border-radius: 20px;
@@ -126,11 +127,10 @@
     list-style: none;
     margin: 0;
     background: rgb(0, 0, 0);
-    /* background: linear-gradient(90deg, rgba(7,23,87,1) 0%, rgba(0,0,0,1) 50%, rgba(7,23,87,1) 100%); */
 }
 
 .navigation a {
-    font-size: 20px;
+    font-size: 2em;
     font-family: 'Oswald', monospace;
     text-decoration: none;
     display: block;
@@ -138,18 +138,18 @@
     color: whitesmoke;
 }
 
-  .navigation a:hover {
-    background: ;
-}
-
-#shadow {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-
 p {
-    font-size: 20px;
+    font-size: 2.1em;
     color: whitesmoke;
     text-align: center;
     line-height: 30px;
-    
+}
+
+.paragraph {
+    text-shadow: 0 2px 20px hsl(210, 50%, 99%);
+}
+
+.paragraph::first-letter {
+    font-size: 2em;
+    line-height: 0;
 }
