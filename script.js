@@ -1,16 +1,68 @@
-// Define const elements of the page
-
-// Define function for adding elements to Body element
-
 const bodyElement = document.getElementById('Body');
 
-const exampleFunction = function (arr, content) {
-  console.log('a');
-  for (i = arr; i < arr.length; i++) {
-    let newElement = bodyElement.appendChild(document.createElement("div"));
-    newElement.appendChild(document.createTextNode(content));
-  }
-  console.log('aa');
+const elements = [
+  {
+    name: "Sun",
+    src: "./img/SUN.jpg",
+    text: 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
+  },
+  {
+    name: "Mercury",
+    src: "./img/MERCURY.jpg",
+    text: 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.'
+  },
+  {
+    name: "Venus",
+    src: "./img/VENUS.jpg",
+    text: 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.'
+  },
+  {
+    name: "Earth",
+    src: "./img/EARTH.jpg",
+    text: 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.'
+  },
+  {
+    name: "Mars",
+    src: "./img/MARS.jpg",
+    text: 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.'
+  },
+  {
+    name: "Jupiter",
+    src: "./img/JUPITER.jpg",
+    text: 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.'
+  },
+  {
+    name: "Saturn",
+    src: "./img/SATURN.png",
+    text: 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.'
+  },
+  {
+    name: "Uranus",
+    src: "./img/URAN.png",
+    text: 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.'
+  },
+  {
+    name: "Neptune",
+    src: "./img/NEPTUNE.png",
+    text: 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.'
+  },
+]
+
+const exampleFunction = function (elements) {
+  elements.forEach(function (element) {
+    const divRow = bodyElement.appendChild(document.createElement("div"));
+    divRow.className = "DivRow";
+    const divImg = divRow.appendChild(document.createElement("div"));
+    divImg.className = "DivImg";
+    const img = divImg.appendChild(document.createElement("img"))
+    img.className = `Image BorderDiv ${element.name}`;
+    img.src = element.src;
+    const divTxt = divRow.appendChild(document.createElement("div"));
+    divTxt.className = 'DivText';
+    const text = divTxt.appendChild(document.createElement("p"));
+    text.appendChild(document.createTextNode(element.text));
+    bodyElement.appendChild(document.createElement("br"));
+  });
 }
 
-exampleFunction([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "blablablabla");
+exampleFunction(elements);
