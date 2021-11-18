@@ -21,9 +21,9 @@
  * 8.  Add className for divImg element
  * 9.  Append img element to divImg
  * 10.  Add className for img element with help of template literal 
- *     https: developer.mozilla.org / en - US / docs /Web/JavaScript/Reference/Template_literals
+ *     https: developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
  * 11. Add src attribute for image
- *     https: developer.mozilla.org / en - US / docs /Web/API/HTMLImageElement/src
+ *     https: developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/src
  * 12. Append divTxt element to divRow
  * 13. Add className for divTxt
  * 14. Append text element to divTxt
