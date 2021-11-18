@@ -5,31 +5,31 @@
  *     https:developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
  *     https:developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
  *     https:developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
- * 2.  Define body element
+ * 2.  Define body element.
  *     https:developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
  * 3.  Define function to create and add dynamic elements.
  *     Function takes "elements" as parameter. This param should be a list of objects.
  *     https:developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
  * 4.  Use forEach function to iterate on elements of an ARRAY.
  *     https:developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
- * 5.  Append first div to body element and assign it to const 
+ * 5.  Append first div to body element and assign it to const.
  *     https:developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
  *     https:developer.mozilla.org/en-US/docs/Web/API/Document/createElement
- * 6.  Add className for divRow element
+ * 6.  Add className for divRow element.
  *     https:developer.mozilla.org/en-US/docs/Web/API/Element/className
- * 7.  Append divImg to the divRow
- * 8.  Add className for divImg element
- * 9.  Append img element to divImg
- * 10.  Add className for img element with help of template literal 
+ * 7.  Append divImg to the divRow.
+ * 8.  Add className for divImg element.
+ * 9.  Append img element to divImg.
+ * 10. Add className for img element with help of template literal .
  *     https: developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
- * 11. Add src attribute for image
+ * 11. Add src attribute for image.
  *     https: developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/src
- * 12. Append divTxt element to divRow
- * 13. Add className for divTxt
- * 14. Append text element to divTxt
- * 15. Append text node to text element
+ * 12. Append divTxt element to divRow.
+ * 13. Add className for divTxt.
+ * 14. Append text element to divTxt.
+ * 15. Append text node to text element.
  *     https: developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode
- * 16. Append br element to body after all other elements have been added
+ * 16. Append br element to body after all other elements have been added.
  * 17  Run renderComponents function with ELEMENTS as a paramater.
 */
 
