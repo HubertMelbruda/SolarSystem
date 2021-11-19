@@ -86,7 +86,7 @@ const ELEMENTS = [
 
   // TODO: write a simillar function to render navigation elements.
 
-  const menuArray = [
+  const MENUARRAY = [
     {
       name: "Home",
       adres: "home.html"
@@ -117,7 +117,7 @@ const ELEMENTS = [
     });
   }
 
-  createMenu(menuArray);
+  createMenu(MENUARRAY);
 
   const renderMainContent = function (elements) {
     elements.forEach(function (element) {
