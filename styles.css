@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Body {
+    font-size: 10px;
+    background: rgb(0, 0, 0);
+    font-family: 'Oswald', monospace;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.DivRow {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    margin: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .DivRow {
+      width: 50%;
+    }
+  }
+
+.DivImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 40%;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.904);
+}
+
+.DivText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 50%;
+    padding: 60px 0px;
+
+}
+
+.Image {
+    width: 70%;
+    height: 60%;
+    border: 10px solid transparent;
+    border-radius: 20px;
+}
+
+/*  Zapewne ten kod nie powinien się tak powtarzać i jest jakiś bardziej elegancki sposób, ale jeszcze go nie poznałem. */
+.BorderDiv {
+    border: 10px solid transparent;
+    border-radius: 20px;
+}
+
+.Sun {
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(0deg, rgba(0, 17, 255, 0.170) 50%, rgba(216, 10, 10, 0.330) 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.Mercury {
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(0deg, rgba(0, 17, 255, 0.170) 50%, rgba(216, 10, 10, 0.330) 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.Venus {
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(0deg, rgba(255, 166, 0, 0.330) 30%, rgba(0, 17, 255, 0.170) 90%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.Earth {
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(0deg, rgba(70, 181, 255, 0.685) 30%, rgba(255, 166, 0, 0.330) 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.Mars {
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(0deg, rgba(255, 107, 70, 0.692) 40%, rgba(70, 181, 255, 0.685) 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.Jupiter {
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(0deg, rgba(254, 255, 166, 0.692) 0%, rgba(255, 112, 76, 0.719) 60%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.Saturn {
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(0deg, rgba(255, 170, 59, 0.746) 40%, rgba(254, 255, 166, 0.692) 50%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.Uranus {
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(0deg, rgba(0, 17, 255, 0.1703) 60%, rgba(255, 170, 59, 0.746) 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.Neptune {
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(0deg, rgba(7, 8, 31, 0.33) 5%, rgba(0, 17, 255, 0.1703) 90%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    background: rgb(0, 0, 0);
+}
+
+.navigation a {
+    font-size: 2em;
+    font-family: 'Oswald', monospace;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: whitesmoke;
+}
+
+p {
+    font-size: 2.1em;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 30px;
+}
+
+.paragraph {
+    text-shadow: 0 2px 20px hsl(210, 50%, 99%);
+}
+
+.paragraph::first-letter {
+    font-size: 2em;
+    line-height: 0;
+}
