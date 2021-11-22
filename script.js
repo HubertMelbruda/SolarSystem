@@ -107,15 +107,15 @@ const ELEMENTS = [
 
   const createMenu = function (elements) {
     const ul = bodyElement.appendChild(document.createElement("ul"));
-      ul.className = "navigation";
+    ul.className = "navigation";
     elements.forEach(function (item) {
-        const li = ul.appendChild(document.createElement("li"));
-      li.className = "liClassName"
-     const text = li.appendChild(document.createElement("a"));
-      text.setAttribute('href', document.createTextNode(item.adres));
+      const li = ul.appendChild(document.createElement("li"));
+      li.className = "liClassName";
+      const text = li.appendChild(document.createElement("a"));
+      text.setAttribute("href", document.createTextNode(item.adres));
       text.appendChild(document.createTextNode(item.name));
     });
-  }
+  };
 
   createMenu(MENUARRAY);
 
